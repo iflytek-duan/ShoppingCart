@@ -1,5 +1,6 @@
 package com.llw.cart.bean;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -100,7 +101,7 @@ public class CarResponse {
             private String productName;
             private String color;
             private String size;
-            private int price;
+            private BigDecimal price;
             private int count;
             private boolean isChecked;//商品是否选中
 
@@ -176,11 +177,11 @@ public class CarResponse {
                 this.size = size;
             }
 
-            public int getPrice() {
+            public BigDecimal getPrice() {
                 return price;
             }
 
-            public void setPrice(int price) {
+            public void setPrice(BigDecimal price) {
                 this.price = price;
             }
 

@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements GoodsCallback, Vi
                 //当有选中商品时计算数量和价格
                 if (cartlistBean.isChecked()) {
                     totalCount++;
-                    totalPrice += cartlistBean.getPrice() * cartlistBean.getCount();
+                    totalPrice += cartlistBean.getPrice().doubleValue() * cartlistBean.getCount();
                 }
             }
         }

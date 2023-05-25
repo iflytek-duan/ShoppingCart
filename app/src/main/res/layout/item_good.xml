@@ -55,7 +55,7 @@
             android:text="商品尺寸"
             android:textSize="14sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tv_goods_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +63,9 @@
             android:layout_centerVertical="true"
             android:layout_marginBottom="4dp"
             android:layout_toRightOf="@+id/iv_goods"
-            android:lines="1"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
             android:text="￥100000.00"
             android:textColor="#DF550B"
             android:textSize="20sp"
